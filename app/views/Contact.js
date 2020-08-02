@@ -107,7 +107,11 @@ const Contact = () => {
             </a>
           </div>
         </div>
+        <a href="http://eepurl.com/g_T2xf">
+          <span>Sign up for our newsletter!</span>
+        </a>
         <ul className="icons">
+          <br></br>
           {data.map((s) => (
             <li key={s.label}>
               <a href={s.link}>

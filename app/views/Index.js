@@ -16,10 +16,9 @@ const Index = () => (
       </header>
       <p>
         {" "}
-        Santa Clara University <Link to="/about">About Us</Link>,{" "}
-        <Link to="/articles">articles</Link>, view{" "}
-        <Link to="/stats">site statistics</Link>, or{" "}
-        <Link to="/contact">contact</Link> me.
+        <Link to="/about">About us</Link>, <Link to="/articles">articles</Link>,{" "}
+        <Link to="/initiatives">view site initiatives</Link>, or{" "}
+        <Link to="/contact">get involved.</Link>
       </p>
     </article>
   </Main>

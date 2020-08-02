@@ -9,7 +9,7 @@ import Index from "./views/Index";
 import NotFound from "./views/NotFound";
 import Articles from "./views/Articles";
 import Research from "./views/Research";
-import Stats from "./views/Stats";
+import Initiatives from "./views/Initiatives";
 
 // All of our CSS
 import "./static/css/main.scss";
@@ -21,7 +21,7 @@ ReactDOM.render(
       <Route path="/about" component={About} />
       <Route path="/articles" component={Articles} />
       <Route path="/research" component={Research} />
-      <Route path="/stats" component={Stats} />
+      <Route path="/initiatives" component={Initiatives} />
       <Route path="/contact" component={Contact} />
       {/* Only useful in development mode */}
       <Route component={NotFound} status={404} />

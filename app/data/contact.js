@@ -1,6 +1,5 @@
 import faFacebook from "@fortawesome/fontawesome-free-brands/faFacebookF";
 import faInstagram from "@fortawesome/fontawesome-free-brands/faInstagram";
-//import faLinkedinIn from "@fortawesome/fontawesome-free-brands/faLinkedinIn";
 import faEnvelope from "@fortawesome/fontawesome-free-regular/faEnvelope";
 
 const data = [
@@ -19,13 +18,6 @@ const data = [
     label: "Facebook",
     icon: faFacebook,
   },
-  /*
-  {
-    link: "https://www.linkedin.com/in/",
-    label: "LinkedIn",
-    icon: faLinkedinIn,
-  },
-  */
 ];
 
 export default data;

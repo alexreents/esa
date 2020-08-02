@@ -9,6 +9,10 @@ const data = [
     label: "About",
   },
   {
+    path: "/initiatives",
+    label: "Initiatives",
+  },
+  {
     path: "/research",
     label: "Research",
   },
@@ -17,12 +21,8 @@ const data = [
     label: "In the news",
   },
   {
-    path: "/stats",
-    label: "Stats",
-  },
-  {
     path: "/contact",
-    label: "Contact",
+    label: "Get Involved",
   },
 ];
 

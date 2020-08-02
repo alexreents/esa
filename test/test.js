@@ -1,22 +1,23 @@
 /* eslint-disable func-names */
-import 'dotenv/config';
+import "dotenv/config";
 
-import puppeteer from 'puppeteer';
+import puppeteer from "puppeteer";
 
-import server from '../server/server';
-import { pages, randomString } from './helpers';
+import server from "../server/server";
+import { pages, randomString } from "./helpers";
 
-require('chai').should();
+require("chai").should();
 
-const port = process.env.PORT || 7999;
+const port = process.env.PORT || 8000;
 
-describe('Page Load Tests:', async function () {
+describe("Page Load Tests:", async function () {
   this.timeout(120000);
   let instance;
   let browser;
   let page;
 
-  before(async () => { // before all of the tests
+  before(async () => {
+    // before all of the tests
     instance = server.listen(port);
     browser = await puppeteer.launch();
     page = await browser.newPage();
@@ -34,8 +35,11 @@ describe('Page Load Tests:', async function () {
       const title = await page.evaluate(() => document.title);
       title.should.equal(args.title);
 
-      await page.waitForSelector('article > header > div > h2 > a');
-      const header = await page.evaluate(() => document.querySelector('article > header > div > h2 > a').innerText);
+      await page.waitForSelector("article > header > div > h2 > a");
+      const header = await page.evaluate(
+        () =>
+          document.querySelector("article > header > div > h2 > a").innerText
+      );
       header.should.equal(args.heading);
     });
   }
@@ -43,14 +47,16 @@ describe('Page Load Tests:', async function () {
   // Check each page except for 404 and API routes
   pages.forEach((url) => checkRender(url));
 
-  it('check if 404 renders', async () => {
+  it("check if 404 renders", async () => {
     await page.goto(`http://localhost:${port}/${randomString(10)}`);
     await page.waitFor(1000);
-    await page.waitForSelector('#root > div > h1');
+    await page.waitForSelector("#root > div > h1");
     const title = await page.evaluate(() => document.title);
-    title.should.equal('404');
-    const header = await page.evaluate(() => document.querySelector('.not-found > h1').innerText);
-    header.should.equal('PAGE NOT FOUND.');
+    title.should.equal("404");
+    const header = await page.evaluate(
+      () => document.querySelector(".not-found > h1").innerText
+    );
+    header.should.equal("PAGE NOT FOUND.");
   });
 });
 

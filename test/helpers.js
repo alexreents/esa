@@ -28,14 +28,14 @@ const pages = [
     heading: "RESEARCH",
   },
   {
-    route: "/stats",
-    title: "Stats | ESA",
-    heading: "STATS",
+    route: "/initiatives",
+    title: "Initiatives | ESA",
+    heading: "INITIATIVES",
   },
   {
     route: "/contact",
-    title: "Contact | ESA",
-    heading: "CONTACT",
+    title: "Get Involved | ESA",
+    heading: "GET INVOLVED",
   },
 ];
 

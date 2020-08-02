@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import Table from "./Table";
-import personalData from "../../data/stats";
+import personalData from "../../data/initiatives";
 
 const PersonalStats = () => {
   const [data, setData] = useState(personalData);
@@ -27,7 +27,7 @@ const PersonalStats = () => {
 
   return (
     <>
-      <h3>Some stats about me</h3>
+      <h3>Some initiatives about me</h3>
       <Table data={Object.keys(data).map((key) => data[key])} />
     </>
   );
