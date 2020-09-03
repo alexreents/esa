@@ -15,7 +15,7 @@ const pages = [
   {
     route: "/about",
     title: "About | ESA",
-    heading: "ABOUT ME",
+    heading: "ABOUT US",
   },
   {
     route: "/articles",

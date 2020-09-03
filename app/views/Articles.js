@@ -16,7 +16,18 @@ const Articles = () => (
           <h2>
             <Link to="/articles">In the News</Link>
           </h2>
-          <p>Some articles about economics that we&apos;ve found interesting</p>
+          <p>
+            Interested in real-world applications of your economics course?
+            <br></br>
+            Below, we've collected some articles that we&apos;ve found
+            interesting, timely, and applicable!
+          </p>
+          <p>
+            <i>
+              (Side Note: SCU offers students a FREE membership to the{" "}
+              <a href="https://wsj.com/SantaClara">Wall Street Journal</a>)
+            </i>
+          </p>
         </div>
       </header>
       {data.map((article) => (

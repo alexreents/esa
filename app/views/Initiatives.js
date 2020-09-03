@@ -4,8 +4,6 @@ import { Helmet } from "react-helmet";
 
 import Main from "../layouts/Main";
 
-import Personal from "../components/Initiatives/Personal";
-
 const Initiatives = () => (
   <Main>
     <Helmet title="Initiatives" />
@@ -17,7 +15,6 @@ const Initiatives = () => (
           </h2>
         </div>
       </header>
-      <Personal />
     </article>
   </Main>
 );

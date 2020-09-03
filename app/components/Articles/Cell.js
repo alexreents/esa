@@ -11,7 +11,7 @@ const Cell = ({ data }) => (
           <a href={data.link}>{data.title}</a>
         </h3>
         <time className="published">
-          {dayjs(data.date).format("MMMM, YYYY")}
+          {dayjs(data.date).format("MMMM DD, YYYY")}
         </time>
       </header>
       <div className="description">
@@ -25,6 +25,7 @@ Cell.propTypes = {
   data: PropTypes.shape({
     title: PropTypes.string.isRequired,
     link: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
     date: PropTypes.string.isRequired,
     desc: PropTypes.string.isRequired,
   }).isRequired,

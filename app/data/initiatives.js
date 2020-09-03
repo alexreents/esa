@@ -1,8 +1,3 @@
-const data = {
-  age: {
-    label: "Current age",
-    value: 0,
-  },
-};
+const data = {};
 
 export default data;
