@@ -5,7 +5,10 @@ import ReactMarkdown from "react-markdown";
 
 import Main from "../layouts/Main";
 
+import Cell from "../components/About/Cell";
+
 import markdown from "../data/about.md";
+import data from "../data/about";
 
 const count = markdown
   .split(/\s+/)
@@ -33,6 +36,17 @@ const About = () => (
         }}
         escapeHtml={false}
       />
+    </article>
+
+    <article className="post" id="team">
+      <header>
+        <div className="title">
+          <h2>Meet the Team!</h2>
+        </div>
+      </header>
+      {data.map((member) => (
+        <Cell data={member} key={member.name} />
+      ))}
     </article>
   </Main>
 );

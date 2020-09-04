@@ -18,7 +18,12 @@ const Index = () => (
         {" "}
         <Link to="/about">About us</Link>, <Link to="/articles">articles</Link>,{" "}
         <Link to="/initiatives">view site initiatives</Link>, or{" "}
-        <Link to="/contact">get involved.</Link>
+        <Link to="/contact">get involved.</Link>{" "}
+      </p>
+      <p>
+        <a href="http://eepurl.com/g_T2xf">
+          <span>Sign up to recieve important club updates!</span>
+        </a>
       </p>
     </article>
   </Main>

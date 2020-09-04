@@ -4,7 +4,7 @@ import faEnvelope from "@fortawesome/fontawesome-free-regular/faEnvelope";
 
 const data = [
   {
-    link: "mailto:esascu@gmail.com",
+    link: "mailto:esa.scu@gmail.com",
     label: "Email",
     icon: faEnvelope,
   },
