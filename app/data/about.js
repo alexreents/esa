@@ -25,12 +25,6 @@ const data = [
     image: "images/team/daniel.jpg",
   },
   {
-    name: "Saurav",
-    role: "External Relations",
-    desc: "Text " + "Text " + "Text " + "Text",
-    image: "images/team/saurav.jpg",
-  },
-  {
     name: "Julia Perry",
     role: "Treasurer",
     desc: "Text " + "Text " + "Text " + "Text",
