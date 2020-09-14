@@ -10,7 +10,7 @@ import morgan from "morgan";
 import routes from "./routes";
 
 const port = process.env.PORT || 8000;
-const env = process.env.NODE_ENV || "production";
+const env = process.env.NODE_ENV || "development";
 const basePath = process.env.BASE_PATH || "/";
 
 const app = express();

@@ -10,10 +10,11 @@ import webpackMiddleware from "webpack-dev-middleware";
 import webpackHotMiddleware from "webpack-hot-middleware";
 import config from "../../../webpack/webpack.config.babel";
 
-const env = process.env.NODE_ENV || "production";
+const env = process.env.NODE_ENV || "development";
 
 const routes = (app) => {
-  if (env === "development") {
+  if (env === "production") {
+    // before: development -- it didn't work in production mode
     // eslint-disable-line eqeqeq
     const compiler = webpack(config);
 
