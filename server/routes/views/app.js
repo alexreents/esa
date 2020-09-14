@@ -13,8 +13,7 @@ import config from "../../../webpack/webpack.config.babel";
 const env = process.env.NODE_ENV || "development";
 
 const routes = (app) => {
-  if (env === "production") {
-    // before: development -- it didn't work in production mode
+  if (env === "development") {
     // eslint-disable-line eqeqeq
     const compiler = webpack(config);
 
