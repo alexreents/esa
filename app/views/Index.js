@@ -17,7 +17,6 @@ const Index = () => (
       <p>
         {" "}
         <Link to="/about">About us</Link>, <Link to="/articles">articles</Link>,{" "}
-        <Link to="/initiatives">view site initiatives</Link>, or{" "}
         <Link to="/contact">get involved.</Link>{" "}
       </p>
       <p>
@@ -27,9 +26,11 @@ const Index = () => (
       </p>
     </article>
     <a className="image">
-      <img className="dow" src="images/dow.jpg" alt=""></img>
+      <img className="dow" src="images/markets.jpg" alt=""></img>
     </a>
   </Main>
 );
 
 export default Index;
+
+//<Link to="/initiatives">view site initiatives</Link>, or{" "}

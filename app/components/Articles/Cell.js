@@ -15,7 +15,7 @@ const Cell = ({ data }) => (
         </time>
       </header>
       <div className="description">
-        <p>{data.desc}</p>
+        <p>{data.subtitle}</p>
       </div>
     </article>
   </div>

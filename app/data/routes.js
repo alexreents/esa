@@ -9,14 +9,6 @@ const data = [
     label: "About",
   },
   {
-    path: "/initiatives",
-    label: "Initiatives",
-  },
-  {
-    path: "/research",
-    label: "Research",
-  },
-  {
     path: "/articles",
     label: "In the news",
   },
@@ -27,3 +19,12 @@ const data = [
 ];
 
 export default data;
+
+//{
+//  path: "/initiatives",
+//  label: "Initiatives",
+//},
+//{
+//  path: "/research",
+//  label: "Research",
+//},

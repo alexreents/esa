@@ -20,8 +20,6 @@ ReactDOM.render(
       <Route exact path="/" component={Index} />
       <Route path="/about" component={About} />
       <Route path="/articles" component={Articles} />
-      <Route path="/research" component={Research} />
-      <Route path="/initiatives" component={Initiatives} />
       <Route path="/contact" component={Contact} />
       {/* Only useful in development mode */}
       <Route component={NotFound} status={404} />
@@ -29,3 +27,6 @@ ReactDOM.render(
   </Router>,
   document.getElementById("root")
 );
+
+//<Route path="/research" component={Research} />
+//<Route path="/initiatives" component={Initiatives} />

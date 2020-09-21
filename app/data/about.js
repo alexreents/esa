@@ -17,7 +17,8 @@ const data = [
   {
     name: "Alex Reents",
     role: "Operations Officer",
-    desc: "Text " + "Text " + "Text " + "Text",
+    desc:
+      "Hello! I'm studying economics and computer science here at SCU, with a minor in mathematics. I enjoy many different aspects of economics, but I'm particularly interested in macro- and behavioral-economics. I enjoy the objective nature of economics and how it approaches problems by looking at tradeoffs; I think this way of reasoning is extremely applicable and important. With ESA, I'm looking to meet other economics students who share my interest in the field and collaborate with them on exciting initiatives!",
     image: "images/team/alex.png",
   },
   {
