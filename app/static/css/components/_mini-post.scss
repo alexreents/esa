@@ -28,12 +28,6 @@
     }
   }
 
-  .bio-description {
-    p {
-      padding: 0;
-    }
-  }
-
   @media (max-width: 480px) {
     .description {
       display: inline;
@@ -62,27 +56,6 @@
       );
       width: 20%;
       float: right;
-    }
-
-    &:hover {
-      img {
-        @include vendor("transform", "scale(1.05)");
-      }
-    }
-  }
-
-  .member-image {
-    overflow: hidden;
-    display: inline;
-
-    img {
-      @include vendor(
-        "transition",
-        "transform #{_duration(transition)} ease-out"
-      );
-      width: 25%;
-      float: left;
-      padding-right: 20px;
     }
 
     &:hover {

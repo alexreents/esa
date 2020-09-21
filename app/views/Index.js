@@ -26,6 +26,9 @@ const Index = () => (
         </a>
       </p>
     </article>
+    <a className="image">
+      <img className="dow" src="images/dow.jpg" alt=""></img>
+    </a>
   </Main>
 );
 

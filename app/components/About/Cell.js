@@ -5,17 +5,15 @@ import dayjs from "dayjs";
 const Cell = ({ data }) => (
   <div className="cell-container">
     <article className="mini-post">
+      <header>
+        <h1>{data.name}</h1>
+        <h3>{data.role}</h3>
+      </header>
       <div className="description">
-        <a className="member-image">
-          <img src={`${BASE_PATH}/${data.image}`} alt="" />
+        <a className="image">
+          <img src={`/${data.image}`} alt="" />
         </a>
-        <header>
-          <h1>{data.name}</h1>
-          <h3>{data.role}</h3>
-        </header>
-        <div className="bio-description">
-          <p>{data.desc} </p>
-        </div>
+        <p>{data.desc} </p>
       </div>
     </article>
   </div>

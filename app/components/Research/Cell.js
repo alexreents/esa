@@ -18,7 +18,7 @@ const Cell = ({ data }) => (
       <div className="description">
         <p>{data.desc} </p>
         <a href={data.authorlink} className="image">
-          <img src={`${BASE_PATH}/${data.image}`} alt="" />
+          <img src={`/${data.image}`} alt="" />
         </a>
       </div>
     </article>
