@@ -24,7 +24,7 @@ const routes = (app) => {
     const middleware = webpackMiddleware(compiler, {
       publicPath: config.output.publicPath,
       contentBase: "src",
-      initiatives: {
+      meetings: {
         colors: true,
         hash: false,
         timings: true,

@@ -15,9 +15,12 @@ const Index = () => (
         </div>
       </header>
       <p>
-        {" "}
-        <Link to="/about">About us</Link>, <Link to="/articles">articles</Link>,{" "}
-        <Link to="/contact">get involved.</Link>{" "}
+        Welcome! We're currently building out our site to include more
+        information about upcomding initiatives, research opportunities, and
+        resources for economics majors. In the meantime, please feel free to{" "}
+        <a href={"mailto:esa.scu@gmail.com"}>
+          <span>reach out to us with any questions!</span>
+        </a>
       </p>
       <p>
         <a href="http://eepurl.com/g_T2xf">
@@ -34,3 +37,9 @@ const Index = () => (
 export default Index;
 
 //<Link to="/initiatives">view site initiatives</Link>, or{" "}
+
+//<p>
+//  {" "}
+//  <Link to="/about">About us</Link>, <Link to="/articles">articles</Link>,{" "}
+//  <Link to="/contact">get involved.</Link>{" "}
+//</p>;
