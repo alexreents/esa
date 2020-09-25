@@ -28,14 +28,9 @@ const pages = [
     heading: "RESEARCH",
   },
   {
-    route: "/initiatives",
-    title: "Initiatives | ESA",
-    heading: "INITIATIVES",
-  },
-  {
     route: "/contact",
     title: "Get Involved | ESA",
-    heading: "GET INVOLVED",
+    heading: "Get Inolved",
   },
 ];
 

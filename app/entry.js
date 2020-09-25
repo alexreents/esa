@@ -7,9 +7,8 @@ import About from "./views/About";
 import Contact from "./views/Contact";
 import Index from "./views/Index";
 import NotFound from "./views/NotFound";
-import Articles from "./views/Articles";
 import Research from "./views/Research";
-import Initiatives from "./views/Initiatives";
+import Articles from "./views/Articles";
 
 // All of our CSS
 import "./static/css/main.scss";
@@ -18,9 +17,9 @@ ReactDOM.render(
   <Router basename={BASE_PATH}>
     <Switch>
       <Route exact path="/" component={Index} />
-      <Route path="/about" component={About} />
-      <Route path="/articles" component={Articles} />
-      <Route path="/contact" component={Contact} />
+      <Route exact path="/about" component={About} />
+      <Route exact path="/articles" component={Articles} />
+      <Route exact path="/contact" component={Contact} />
       {/* Only useful in development mode */}
       <Route component={NotFound} status={404} />
     </Switch>
@@ -28,5 +27,4 @@ ReactDOM.render(
   document.getElementById("root")
 );
 
-//<Route path="/research" component={Research} />
-//<Route path="/initiatives" component={Initiatives} />
+//<Route path="/research" component={Projects} />
