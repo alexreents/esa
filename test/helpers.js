@@ -18,6 +18,11 @@ const pages = [
     heading: "ABOUT US",
   },
   {
+    route: "/initiatives",
+    title: "Initiatives | ESA",
+    heading: "Initiatives",
+  },
+  {
     route: "/articles",
     title: "Articles | ESA",
     heading: "ARTICLES",

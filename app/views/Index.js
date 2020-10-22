@@ -14,11 +14,9 @@ const Index = () => (
           <p>Santa Clara University</p>
         </div>
       </header>
-      <p>
-        <Link to="/initiatives">
-          <b>Check out our upcoming event! (10/28)</b>
-        </Link>
-      </p>
+      <h3>
+        <Link to="/initiatives">Check out our upcoming event! (10/28)</Link>
+      </h3>
 
       <p>
         Welcome! We're currently building out our site to include more
