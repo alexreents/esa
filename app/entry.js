@@ -9,15 +9,17 @@ import Index from "./views/Index";
 import NotFound from "./views/NotFound";
 import Research from "./views/Research";
 import Articles from "./views/Articles";
+import Initiatives from "./views/Initiatives";
 
 // All of our CSS
 import "./static/css/main.scss";
 
 ReactDOM.render(
-  <Router basename={BASE_PATH}>
+  <Router>
     <Switch>
       <Route exact path="/" component={Index} />
       <Route exact path="/about" component={About} />
+      <Route exact path="/initiatives" component={Initiatives} />
       <Route exact path="/articles" component={Articles} />
       <Route exact path="/contact" component={Contact} />
       {/* Only useful in development mode */}

@@ -15,6 +15,12 @@ const Index = () => (
         </div>
       </header>
       <p>
+        <Link to="/initiatives">
+          <b>Check out our upcoming event! (10/28)</b>
+        </Link>
+      </p>
+
+      <p>
         Welcome! We're currently building out our site to include more
         information about upcomding initiatives, research opportunities, and
         resources for economics majors. In the meantime, please feel free to{" "}
@@ -35,8 +41,6 @@ const Index = () => (
 );
 
 export default Index;
-
-//<Link to="/initiatives">view site initiatives</Link>, or{" "}
 
 //<p>
 //  {" "}
